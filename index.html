@@ -52,10 +52,10 @@
   <svg class="star" style="top:16%;left:20%" aria-hidden="true"><use href="#estrella"/></svg>
   <svg class="star" style="top:30%;right:16%;animation-delay:1.2s" aria-hidden="true"><use href="#estrella"/></svg>
   <svg class="star" style="bottom:22%;left:14%;animation-delay:2.2s" aria-hidden="true"><use href="#estrella"/></svg>
-  <p class="hi rv">Dos vidas, un solo cordón: con la bendición de Dios celebramos nuestro matrimonio</p>
+  <p class="hi rv" data-t="hi">Dos vidas, un solo cordón: con la bendición de Dios celebramos nuestro matrimonio</p>
   <h1 id="nombres" aria-label="Aureliano y Ester">Aureliano <span>&</span> Ester</h1>
   <div class="arch rv" style="transition-delay:.4s"><img id="cover" alt="Foto de Aureliano y Ester"></div>
-  <p class="date rv" style="transition-delay:.6s">4 · DICIEMBRE · 2026</p>
+  <p class="date rv" style="transition-delay:.6s" data-t="fechaCorta">4 · DICIEMBRE · 2026</p>
 </header>
 <div class="mola" aria-hidden="true"></div>
 
@@ -64,35 +64,35 @@
   <svg class="star" style="bottom:16%;right:12%;animation-delay:1.5s" aria-hidden="true"><use href="#estrella"/></svg>
   <div class="wrap rv">
     <svg class="cordon" viewBox="0 0 180 24" aria-hidden="true"><use href="#cordon"/></svg>
-    <blockquote>“Y si alguno prevaleciere contra uno, dos le resistirán; y cordón de tres dobleces no se rompe pronto.”</blockquote>
-    <cite>Eclesiastés 4:12</cite>
+    <blockquote data-t="verso">“Y si alguno prevaleciere contra uno, dos le resistirán; y cordón de tres dobleces no se rompe pronto.”</blockquote>
+    <cite data-t="citaVerso">Eclesiastés 4:12</cite>
   </div>
 </section>
 
 <section class="s" id="invitacion">
   <div class="wrap rv">
-    <h2>Nos haría muy felices contar contigo</h2>
-    <p>Con inmensa alegría invitamos a nuestros familiares y amigos a acompañarnos en el día en que uniremos nuestras vidas ante Dios.</p>
+    <h2 data-t="hInv">Nos haría muy felices contar contigo</h2>
+    <p data-t="pInv">Con inmensa alegría invitamos a nuestros familiares y amigos a acompañarnos en el día en que uniremos nuestras vidas ante Dios.</p>
     <div class="cards">
-      <div class="card"><small>Fecha</small><b>Viernes 4 de diciembre de 2026</b></div>
-      <div class="card"><small>Hora</small><b>1:00 p. m.</b></div>
-      <div class="card"><small>Lugar</small><b id="lugar">Iglesia Bautista Independiente Maranatha</b><small id="dir">42CG+V3X, Santiago, Provincia de Veraguas</small></div>
+      <div class="card"><small data-t="fecha">Fecha</small><b data-t="fechaLarga">Viernes 4 de diciembre de 2026</b></div>
+      <div class="card"><small data-t="hora">Hora</small><b data-t="horaTxt">1:00 p. m.</b></div>
+      <div class="card"><small data-t="lugarEt">Lugar</small><b id="lugar">Iglesia Bautista Independiente Maranatha</b><small id="dir">42CG+V3X, Santiago, Provincia de Veraguas</small></div>
     </div>
     <div class="mapa marco"><iframe title="Mapa: ubicación de la ceremonia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.796051358711!2d-80.97733722499147!3d8.122236491907262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fae71f7eaa8d2b3%3A0xe294bb41c8df3d88!2sIglesia%20Bautista%20Independiente%20Maranatha!5e0!3m2!1ses-419!2spa!4v1791221940722!5m2!1ses-419!2spa" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
     <div class="acts">
-      <button class="btn o" id="cal" type="button">Agregar al calendario</button>
-      <a class="btn o" id="mapa" href="#" target="_blank" rel="noopener" hidden>Cómo llegar</a>
+      <button class="btn o" id="cal" type="button" data-t="addCal">Agregar al calendario</button>
+      <a class="btn o" id="mapa" href="#" target="_blank" rel="noopener" hidden data-t="llegar">Cómo llegar</a>
     </div>
   </div>
 </section>
 
 <section class="s verso glit" id="cuenta">
   <div class="wrap rv">
-    <h2>Falta poco para el gran día</h2>
+    <h2 data-t="hCuenta">Falta poco para el gran día</h2>
     <div class="count" id="count" role="timer" aria-label="Tiempo restante para la boda">
-      <div><b id="cd">0</b><small>días</small></div>
-      <div><b id="ch">0</b><small>horas</small></div>
-      <div><b id="cm">0</b><small>minutos</small></div>
+      <div><b id="cd">0</b><small data-t="dias">días</small></div>
+      <div><b id="ch">0</b><small data-t="horas">horas</small></div>
+      <div><b id="cm">0</b><small data-t="minutos">minutos</small></div>
     </div>
     <div class="cal" id="cal-m" aria-label="Calendario de la fecha de la boda"></div>
   </div>
@@ -100,47 +100,47 @@
 
 <section class="s alt" id="padres">
   <div class="wrap rv">
-    <h2>Con la bendición de nuestros padres</h2>
+    <h2 data-t="hPadres">Con la bendición de nuestros padres</h2>
     <div class="div"><svg aria-hidden="true"><use href="#flor"/></svg></div>
     <div class="pair">
-      <div><h3>Aureliano González</h3><p>Hijo de<br>Aureliano González y Lidia Arcia</p></div>
-      <div><h3>Ester Yáñez</h3><p>Hija de<br>Cristóbal Yáñez y Eneida Yáñez</p></div>
+      <div><h3>Aureliano González</h3><p data-t="padresA">Hijo de<br>Aureliano González y Lidia Arcia</p></div>
+      <div><h3>Ester Yáñez</h3><p data-t="padresE">Hija de<br>Cristóbal Yáñez y Eneida Yáñez</p></div>
     </div>
   </div>
 </section>
 
 <section class="s" id="vestimenta">
   <div class="wrap rv">
-    <h2>Código de vestimenta</h2>
+    <h2 data-t="hVest">Código de vestimenta</h2>
     <img class="dress-img marco" id="vestImg" alt="Ejemplo del atuendo típico panameño" loading="lazy">
-    <p class="dress">Atuendo típico panameño</p>
-    <p>Pollera, montuno, camisilla y sombrero pintao: te esperamos con lo más lindo de nuestra tradición.</p>
+    <p class="dress" data-t="vestTit">Atuendo típico panameño</p>
+    <p data-t="vestTxt">Vestido típico, montuno, camisilla y sombrero pintao: te esperamos con lo más lindo de nuestra tradición.</p>
   </div>
 </section>
 
 <section class="s alt" id="regalos">
   <div class="wrap rv">
-    <h2>Tu presencia es nuestro mejor regalo</h2>
-    <p>Si deseas tener un detalle con nosotros, puedes elegir libremente la opción que prefieras.</p>
+    <h2 data-t="hReg">Tu presencia es nuestro mejor regalo</h2>
+    <p data-t="pReg">Si deseas tener un detalle con nosotros, puedes elegir libremente la opción que prefieras.</p>
     <div class="gifts">
-      <div class="card"><b>Regalo en efectivo</b></div>
-      <span class="o">o</span>
-      <div class="card"><b>Regalo físico</b></div>
+      <div class="card"><b data-t="efectivo">Regalo en efectivo</b></div>
+      <span class="o" data-t="o">o</span>
+      <div class="card"><b data-t="fisico">Regalo físico</b></div>
     </div>
   </div>
 </section>
 
 <section class="s" id="confirmar">
   <div class="wrap rv">
-    <h2>¿Nos acompañas?</h2>
-    <p style="margin-bottom:2rem">Por favor, cuéntanos si podrás asistir.</p>
-    <button class="btn" type="button" data-rsvp>Confirmar asistencia</button>
+    <h2 data-t="hConf">¿Nos acompañas?</h2>
+    <p style="margin-bottom:2rem" data-t="pConf">Por favor, cuéntanos si podrás asistir.</p>
+    <button class="btn" type="button" data-rsvp data-t="confirmar">Confirmar asistencia</button>
   </div>
 </section>
 
 <section class="s alt" id="galeria">
   <div class="wrap rv">
-    <h2>Nuestra historia</h2>
+    <h2 data-t="hGal">Nuestra historia</h2>
     <div class="grid" id="grid"></div>
   </div>
 </section>
@@ -154,40 +154,41 @@
   <svg class="rama r4" aria-hidden="true"><use href="#rama"/></svg>
   <div class="wrap rv">
     <div class="div"><svg aria-hidden="true"><use href="#flor"/></svg></div>
-    <p style="font:italic 1.35rem var(--serif);margin-bottom:1.5rem">Gracias por ser parte de este momento tan especial de nuestras vidas.</p>
+    <p style="font:italic 1.35rem var(--serif);margin-bottom:1.5rem" data-t="cierre">Gracias por ser parte de este momento tan especial de nuestras vidas.</p>
     <h2 class="script">Aureliano & Ester</h2>
-    <p class="date">4 · DICIEMBRE · 2026</p>
-    <button class="btn" type="button" data-rsvp>Confirmar asistencia</button>
+    <p class="date" data-t="fechaCorta">4 · DICIEMBRE · 2026</p>
+    <button class="btn" type="button" data-rsvp data-t="confirmar">Confirmar asistencia</button>
   </div>
 </section>
 <div class="mola" aria-hidden="true"></div>
 </main>
 
 <button class="fab" id="fabM" type="button" aria-pressed="false" aria-label="Reproducir música">♪</button>
-<button class="btn fab" id="fabR" type="button" data-rsvp>Confirmar</button>
+<button class="btn fab" id="fabR" type="button" data-rsvp data-t="rsvpCorto">Confirmar</button>
+<div class="lang" role="group"><button type="button" data-lang="es" aria-pressed="true">ES</button><button type="button" data-lang="en" aria-pressed="false">EN</button></div>
 <div id="toast" role="status"></div>
 
 <dialog id="dlg" aria-labelledby="dt">
   <div class="dlg">
     <button class="x" type="button" id="dx" aria-label="Cerrar">×</button>
     <div id="formView">
-      <h2 id="dt" style="font-size:1.8rem">Confirmar asistencia</h2>
+      <h2 id="dt" style="font-size:1.8rem" data-t="confirmar">Confirmar asistencia</h2>
       <form id="f" novalidate>
-        <div><label for="n">Nombre completo</label><input type="text" id="n" name="nombre" autocomplete="name" required></div>
-        <div><label for="p">Cantidad de personas</label><input type="number" id="p" name="personas" min="1" max="10" value="1" inputmode="numeric" required></div>
-        <fieldset><legend>¿Podrás asistir?</legend>
-          <label class="opt"><input type="radio" name="asistencia" value="Sí asistiré" required> Sí asistiré</label>
-          <label class="opt"><input type="radio" name="asistencia" value="No podré asistir"> No podré asistir</label>
+        <div><label for="n" data-t="nombre">Nombre completo</label><input type="text" id="n" name="nombre" autocomplete="name" required></div>
+        <div><label for="p" data-t="personas">Cantidad de personas</label><input type="number" id="p" name="personas" min="1" max="10" value="1" inputmode="numeric" required></div>
+        <fieldset><legend data-t="asistir">¿Podrás asistir?</legend>
+          <label class="opt"><input type="radio" name="asistencia" value="Sí asistiré" required> <span data-t="si">Sí asistiré</span></label>
+          <label class="opt"><input type="radio" name="asistencia" value="No podré asistir"> <span data-t="no">No podré asistir</span></label>
         </fieldset>
-        <div><label for="m">Mensaje para los novios (opcional)</label><textarea id="m" name="mensaje"></textarea></div>
+        <div><label for="m" data-t="mensaje">Mensaje para los novios (opcional)</label><textarea id="m" name="mensaje"></textarea></div>
         <p class="err" id="err" role="alert"></p>
-        <button class="btn" type="submit" id="send">Enviar confirmación</button>
+        <button class="btn" type="submit" id="send" data-t="enviar">Enviar confirmación</button>
       </form>
     </div>
     <div id="thanks" hidden style="text-align:center;padding:1rem 0">
       <svg width="50" height="50" aria-hidden="true"><use href="#flor"/></svg>
-      <h2 style="margin-top:1rem">¡Gracias por confirmar!</h2>
-      <p>Nos hace muy felices contar contigo. ¡Nos vemos el 4 de diciembre!</p>
+      <h2 style="margin-top:1rem" data-t="gracias">¡Gracias por confirmar!</h2>
+      <p data-t="gracias2">Nos hace muy felices contar contigo. ¡Nos vemos el 4 de diciembre!</p>
     </div>
   </div>
 </dialog>
@@ -199,6 +200,7 @@
   <button id="lbX" type="button" aria-label="Cerrar">×</button>
 </dialog>
 
+<script src="js/idioma.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

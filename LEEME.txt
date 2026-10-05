@@ -1,14 +1,14 @@
 INVITACIÓN DE BODA · AURELIANO & ESTER
 
 ESTRUCTURA
-index.html (textos), css/style.css (colores en :root), js/main.js (bloque CONFIG al inicio),
+index.html (textos), css/style.css (colores en :root), js/main.js (bloque CONFIG al inicio), js/idioma.js (todos los textos en español e inglés),
 apps-script/Code.gs (código para Google Sheets), carpetas fotos/, musica/ y decoracion/.
 Sube todo con las mismas carpetas. Las rutas distinguen mayúsculas y minúsculas.
 
 FOTOS (carpeta fotos/, formato .jpeg; 1600 px de ancho máximo, 150-400 KB cada una)
   foto_novios.jpeg   portada
   vestimenta.jpeg    código de vestimenta (vertical, aprox. 4:5)
-  galeria_1.jpeg ... galeria_4.jpeg   galería (hasta 9 si agregas rutas en CONFIG.galeria)
+  galeria_1.jpeg ... galeria_7.jpeg   galería (la primera se muestra grande; hasta 9 si agregas rutas en CONFIG.galeria)
 Si falta un archivo se muestra un marcador con el nombre que debes usar.
 
 DECORACIÓN (carpeta decoracion/, PNG o WebP con fondo transparente, menos de 150 KB)
@@ -39,3 +39,11 @@ CONFIRMACIONES EN GOOGLE SHEETS
 6. Envía una confirmación de prueba y verifica que aparezca en la hoja.
 Si cambias el script, crea una nueva implementación (Gestionar implementaciones > Editar > Nueva versión).
 Sin scriptUrl, las respuestas solo quedan en el navegador de quien las envía.
+
+IDIOMAS (ES / EN)
+La página muestra inglés si el idioma principal del navegador o teléfono del invitado es inglés; en cualquier otro caso, español.
+El selector ES | EN (arriba a la derecha) permite cambiarlo y recuerda la elección en ese dispositivo.
+Todos los textos se editan en js/idioma.js, en las dos versiones (es y en). El HTML conserva el texto en español como respaldo.
+Los nombres y los datos de CONFIG (lugar, dirección) no se traducen.
+La vista previa al compartir por WhatsApp (og:title y og:description) siempre sale en español.
+Las respuestas del formulario se guardan siempre con los valores "Sí asistiré" / "No podré asistir", sin importar el idioma.
