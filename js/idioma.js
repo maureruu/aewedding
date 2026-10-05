@@ -26,7 +26,7 @@ es:{
   padresE:"Hija de<br>Cristóbal Yáñez y Eneida Yáñez",
   hVest:"Código de vestimenta",
   vestTit:"Atuendo típico panameño",
-  vestTxt:"Vestido típico, montuno, camisilla y sombrero pintao: te esperamos con lo más lindo de nuestra tradición.",
+  vestTxt:"Vestido típico, montuno, camisilla y sombrero pintao: te esperamos con lo más lindo de nuestra tradición. Please refrain from wearing white.",
   hReg:"Tu presencia es nuestro mejor regalo",
   pReg:"Si deseas tener un detalle con nosotros, puedes elegir libremente la opción que prefieras.",
   efectivo:"Regalo en efectivo",
