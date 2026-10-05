@@ -1,0 +1,8 @@
+Imágenes opcionales (PNG o WebP con FONDO TRANSPARENTE). Nombres exactos:
+  sobre.webp  (o .png, .jpeg, .jpg) -> imagen del sobre cerrado de la entrada
+  sello.webp  (o .png, .jpeg, .jpg) -> sello de cera que va ENCIMA del sobre (cuadrado, aprox. 300 px)
+      Posición del sello sobre el sobre: js/main.js > CONFIG.selloPos = [horizontal %, vertical %]
+  rama_esquina.webp       -> rama de la esquina superior izquierda (se refleja en las otras tres)
+  flor_espiritu_santo.webp -> flor del Espíritu Santo (separadores y mensaje de gracias)
+  cordon.webp             -> cordón de tres dobleces sobre el versículo (alargado, aprox. 7:1)
+Si un archivo no existe, se muestra el dibujo incluido. Tamaño recomendado: menos de 150 KB cada uno.

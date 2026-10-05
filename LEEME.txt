@@ -1,0 +1,41 @@
+INVITACIÓN DE BODA · AURELIANO & ESTER
+
+ESTRUCTURA
+index.html (textos), css/style.css (colores en :root), js/main.js (bloque CONFIG al inicio),
+apps-script/Code.gs (código para Google Sheets), carpetas fotos/, musica/ y decoracion/.
+Sube todo con las mismas carpetas. Las rutas distinguen mayúsculas y minúsculas.
+
+FOTOS (carpeta fotos/, formato .jpeg; 1600 px de ancho máximo, 150-400 KB cada una)
+  foto_novios.jpeg   portada
+  vestimenta.jpeg    código de vestimenta (vertical, aprox. 4:5)
+  galeria_1.jpeg ... galeria_4.jpeg   galería (hasta 9 si agregas rutas en CONFIG.galeria)
+Si falta un archivo se muestra un marcador con el nombre que debes usar.
+
+DECORACIÓN (carpeta decoracion/, PNG o WebP con fondo transparente, menos de 150 KB)
+  sobre.webp (o .png, .jpeg, .jpg)   imagen del sobre de entrada
+  sello.webp (o .png, .jpeg, .jpg)   sello de cera encima del sobre (cuadrado, aprox. 300 px)
+  rama_esquina.webp                  rama de la esquina superior izquierda (se refleja en las otras)
+  flor_espiritu_santo.webp           flor de los separadores
+  cordon.webp                        cordón sobre el versículo (alargado, aprox. 7:1)
+Si falta un archivo se usa el dibujo incluido.
+Posición del sello sobre el sobre: CONFIG.selloPos = [horizontal %, vertical %].
+
+MÚSICA
+Guarda el MP3 en musica/ y escribe su ruta en CONFIG.musica (por ejemplo "musica/cancion.mp3").
+Nunca se reproduce sola; solo con el botón de la nota musical.
+
+OTROS CAMBIOS
+Lugar, dirección y botón "Cómo llegar": CONFIG (lugar, direccion, mapaUrl).
+Mapa incorporado: etiqueta iframe de la sección Invitación en index.html.
+Fecha y hora: CONFIG.fecha, CONFIG.inicio y CONFIG.fin (hora de Panamá) y los textos del HTML.
+Vista previa en WhatsApp: en index.html, pon en og:image la dirección completa de la foto de portada publicada.
+
+CONFIRMACIONES EN GOOGLE SHEETS
+1. Crea una hoja de Google y escribe en la fila 1: Fecha | Nombre | Personas | Asistencia | Mensaje
+2. Extensiones > Apps Script. Borra lo que haya, pega el contenido de apps-script/Code.gs y guarda.
+3. Implementar > Nueva implementación > Aplicación web. Ejecutar como: yo. Quién tiene acceso: cualquier persona.
+4. Autoriza el acceso cuando Google lo pida.
+5. Copia la URL (termina en /exec) y pégala en CONFIG.scriptUrl.
+6. Envía una confirmación de prueba y verifica que aparezca en la hoja.
+Si cambias el script, crea una nueva implementación (Gestionar implementaciones > Editar > Nueva versión).
+Sin scriptUrl, las respuestas solo quedan en el navegador de quien las envía.

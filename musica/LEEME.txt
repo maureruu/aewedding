@@ -1,0 +1,1 @@
+Coloca aquí tu canción (cancion.mp3) y escribe su ruta en js/main.js, dentro de CONFIG.musica.

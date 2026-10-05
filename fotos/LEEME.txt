@@ -1,0 +1,6 @@
+Guarda aquí tus fotos con ESTOS nombres (o cambia las rutas en js/main.js > CONFIG):
+  foto_novios.jpeg  -> portada (foto de los novios)
+  vestimenta.jpeg   -> imagen del código de vestimenta (vertical, aprox. 4:5)
+  galeria_1.jpeg ... galeria_4.jpeg -> galería (4 fotos; hasta 9 si agregas rutas en CONFIG.galeria)
+Mientras un archivo no exista, la página muestra un marcador con el nombre que falta.
+Consejo: máximo 1600 px de ancho y 150-400 KB por foto (portada menos de 300 KB).
